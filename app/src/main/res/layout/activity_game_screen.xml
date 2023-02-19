@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameScreen"
+    android:background="#EC588A">
+
+    <TextView
+        android:id="@+id/timeText"
+        android:layout_width="190dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="10dp"
+        android:text="Left Time:"
+        android:gravity="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/scoreText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textSize="20sp"
+        android:text="Score: 0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timeText" />
+
+    <Button
+        android:id="@+id/backHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Back Home"
+        android:onClick="backToHome"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:layout_width="350dp"
+        android:layout_height="465dp"
+        android:layout_marginBottom="65dp"
+        app:columnCount="3"
+        app:rowCount="5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/bear1"
+            android:layout_width="115dp"
+            android:layout_height="90dp"
+            app:layout_column="0"
+            app:layout_row="0"
+            android:onClick="tick"
+            app:srcCompat="@drawable/bear" />
+
+        <ImageView
+            android:id="@+id/bear2"
+            android:layout_width="115dp"
+            android:layout_height="90dp"
+            app:layout_column="0"
+            android:onClick="tick"
+            app:layout_row="3"
+            app:srcCompat="@drawable/bear" />
+
+        <ImageView
+            android:id="@+id/bear3"
+            android:layout_width="115dp"
+            android:layout_height="90dp"
+            app:layout_column="2"
+            android:onClick="tick"
+            app:layout_row="4"
+            app:srcCompat="@drawable/bear" />
+
+        <ImageView
+            android:id="@+id/bear4"
+            android:layout_width="115dp"
+            android:layout_height="90dp"
+            app:layout_column="1"
+            app:layout_row="3"
+            android:onClick="tick"
+            app:srcCompat="@drawable/bear" />
+
+        <ImageView
+            android:id="@+id/bear5"
+            android:layout_width="115dp"
+            android:layout_height="90dp"
+            app:layout_column="2"
+            app:layout_row="3"
+            android:onClick="tick"
+            app:srcCompat="@drawable/bear" />
+
+        <ImageView
+            android:id="@+id/bear6"
+            android:layout_width="115dp"
+            android:layout_height="90dp"
+            app:layout_column="2"
+            app:layout_row="1"
+            android:onClick="tick"
+            app:srcCompat="@drawable/bear" />
+
+        <ImageView
+            android:id="@+id/bear7"
+            android:layout_width="115dp"
+            android:layout_height="90dp"
+            app:layout_column="2"
+            app:layout_row="2"
+            android:onClick="tick"
+            app:srcCompat="@drawable/bear" />
+
+        <ImageView
+            android:id="@+id/bear8"
+            android:layout_width="115dp"
+            android:layout_height="90dp"
+            app:layout_column="1"
+            app:layout_row="2"
+            android:onClick="tick"
+            app:srcCompat="@drawable/bear" />
+
+        <ImageView
+            android:id="@+id/bear9"
+            android:layout_width="115dp"
+            android:layout_height="90dp"
+            app:layout_column="1"
+            android:onClick="tick"
+            app:layout_row="1"
+            app:srcCompat="@drawable/bear" />
+
+        <ImageView
+            android:id="@+id/bear10"
+            android:layout_width="115dp"
+            android:layout_height="90dp"
+            app:layout_column="0"
+            app:layout_row="4"
+            android:onClick="tick"
+            app:srcCompat="@drawable/bear" />
+
+        <ImageView
+            android:id="@+id/bear11"
+            android:layout_width="115dp"
+            android:layout_height="90dp"
+            app:layout_column="0"
+            app:layout_row="2"
+            android:onClick="tick"
+            app:srcCompat="@drawable/bear" />
+
+        <ImageView
+            android:id="@+id/bear12"
+            android:layout_width="115dp"
+            android:layout_height="90dp"
+            app:layout_column="0"
+            android:onClick="tick"
+            app:layout_row="1"
+            app:srcCompat="@drawable/bear" />
+
+        <ImageView
+            android:id="@+id/bear13"
+            android:layout_width="115dp"
+            android:layout_height="90dp"
+            app:layout_column="2"
+            app:layout_row="0"
+            android:onClick="tick"
+            app:srcCompat="@drawable/bear" />
+
+        <ImageView
+            android:id="@+id/bear14"
+            android:layout_width="115dp"
+            android:layout_height="90dp"
+            app:layout_column="1"
+            app:layout_row="0"
+            android:onClick="tick"
+            app:srcCompat="@drawable/bear" />
+
+        <ImageView
+            android:id="@+id/bear15"
+            android:layout_width="115dp"
+            android:layout_height="90dp"
+            app:layout_column="1"
+            app:layout_row="4"
+            android:onClick="tick"
+            app:srcCompat="@drawable/bear" />
+
+    </androidx.gridlayout.widget.GridLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
